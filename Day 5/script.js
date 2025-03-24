@@ -1,8 +1,8 @@
 // Function
-// function demo(x) //parameters
-// {
-//   alert(x) 
-// }
+function demo(x) //parameters
+{
+  alert(x) 
+}
 
 // demo("Right Anwser"); //arguments
 
