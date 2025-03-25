@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 | JavaScript Challenge</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ddd;
+        }
+        #box{
+            display: flex;
+            width: 400px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+        button{
+            padding: 9px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+    </style>
+    <script>
+        // function Border(){
+        //  const box = document.getElementById('box');
+        //  box.style.border = "2px solid red"
+        // }
+        
+        // function BackgroundColor(){
+        //      const box = document.getElementById('box');
+        //       box.style.backgroundColor = "black"
+        // }
+        // function BorderRadius(){
+        //    const box = document.getElementById('box');
+        //       box.style.borderRadius = "20px"
+        // }
+
+        function applyStyling(prop,value){
+           const box = document.getElementById('box');
+           box.style[prop] = value;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div id="box">
+
+        </div>
+          <button onclick="applyStyling('border','2px solid purple')">Add Border</button>
+          <button onclick="applyStyling('background-color','green')">Add Background</button>
+          <button onclick="applyStyling('border-radius','20px')">Add BorderRadius</button>
+    </div>
+</body>
+</html>
