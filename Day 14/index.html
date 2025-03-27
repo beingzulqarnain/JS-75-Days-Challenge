@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14 | JavaScript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #title{
+            text-align: center;
+            margin-top: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            padding: 20px;
+            border: 1px dashed #000;
+            
+        }
+        .title1{
+           
+            padding: 20px;
+            background-color: blueviolet;
+            color: white;
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        @keyframes title {
+            0%{
+                background-color: red;
+                font-size:5px;
+        }
+            20%{
+                background-color: blue;
+                font-size:10px;
+        }
+            40%{
+                background-color: yellow;
+                font-size:20px;
+        }
+            60%{
+                background-color: purple;
+                font-size:30px;
+        }
+            80%{
+                background-color: crimson;
+            font: size 40px
+        }
+            100%{
+                background-color: green;
+            font: size 50px
+        }
+
+
+
+        }
+    </style>
+    <script>
+        const headingEffect = () => {
+            const heading = document.getElementById('title');
+            heading.style.animation = 'title 3s infinite'
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <h1 id="title" >JavaScript 14 Day Challenge</h1>
+     <button class="title1" onclick="headingEffect()">Animate Heading</button>
+</body>
+</html>
